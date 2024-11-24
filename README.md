@@ -13,6 +13,33 @@ The journey of this project required significant effort, from understanding the 
 - **Experiments and Optimization**: Multiple experiments were conducted to optimize hyperparameters such as learning rate, batch size, and network depth.
 
 ---
+## How to Run
+- To run this project locally, follow these steps:
+
+Clone the Repository
+First, clone the repository to your local machine:
+
+bash
+Copy code
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+Install Dependencies
+Install the required Python libraries using pip from the requirements.txt file:
+
+bash
+Copy code
+pip install -r requirements.txt
+Download the Dataset
+Download the Dogs vs Cats dataset from Kaggle or any other source and place it in the appropriate folder (data/ or as mentioned in the notebook).
+
+Run the Jupyter Notebook
+Launch Jupyter Notebook to open the notebook file:
+
+bash
+Copy code
+jupyter notebook Dogs_vs_Cats_Image_Classification_CNN.ipynb
+Execute the Code
+Inside the notebook, run the cells sequentially to preprocess the images, define and train the model, and evaluate the performance.
 
 ## Key Challenges
 One of the most challenging aspects was implementing the data augmentation pipeline. Managing overfitting and improving the model's performance required the use of techniques like:
@@ -28,13 +55,3 @@ datagen = ImageDataGenerator(
     horizontal_flip=True,
     fill_mode='nearest'
 )
-## How to Run the Notebook
-Clone this repository and navigate to the project folder.
-Install the required packages:
-bash
-Copy code
-pip install -r requirements.txt
-Run the Jupyter Notebook to view and execute the code:
-bash
-Copy code
-jupyter notebook Dogs_vs_Cats_Image_Classification_CNN.ipynb
